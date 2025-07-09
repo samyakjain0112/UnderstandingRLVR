@@ -16,3 +16,4 @@
 ```
 source run.sh
 ```
+Remember to change the file paths in the bash file.
