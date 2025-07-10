@@ -27,3 +27,6 @@ Remember to change the file paths in the bash file.
 2) On the children nodes run: ray start --address=<address>. <address> is displayed after executing (1)
 3) In run.sh uncomment the first line and change the ip-address as shown in (1). Then change --trainer.nnodes depending on how many nodes we want to use.
 ```
+Todos
+1) Add the eval code and corresponding instructions.
+2) Add the features to run on multiple datasets like Numina and multiple models like llama8B.
