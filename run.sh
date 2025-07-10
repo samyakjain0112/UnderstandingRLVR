@@ -1,6 +1,7 @@
 
 
-RAY_ADDRESS='http://10.1.79.226:8265' ray job submit --working-dir . --  HYDRA_FULL_ERROR=1 python -m verl.trainer.main_ppo \
+#RAY_ADDRESS='http://10.1.79.226:8265' ray job submit --working-dir . --  HYDRA_FULL_ERROR=1 
+python -m verl.trainer.main_ppo \
    data.train_files=/scratch/azureml/cr/j/76b115a71659407eb80125f03f9f1cbd//cap/data-capability/wd/INPUT_asdf/verl/verl/data/simplelr_zoo/train.parquet \
    data.val_files=/scratch/azureml/cr/j/76b115a71659407eb80125f03f9f1cbd//cap/data-capability/wd/INPUT_asdf/verl/verl/data/simplelr_zoo/test.parquet \
    algorithm.adv_estimator=grpo \
@@ -36,7 +37,7 @@ RAY_ADDRESS='http://10.1.79.226:8265' ray job submit --working-dir . --  HYDRA_F
    trainer.experiment_name='verl_math_Qwen2p5Math7B_NegativeRAFT_logalso_BS32_run_tokenmean' \
    trainer.rollout_data_dir='/scratch/azureml/cr/j/76b115a71659407eb80125f03f9f1cbd//cap/data-capability/wd/INPUT_asdf/checkpoints/verl_math_Qwen2p5Math7B_NegativeRAFT_logalso_BS32_run_tokenmean/rollouts' \
    trainer.n_gpus_per_node=8 \
-   trainer.nnodes=2 \
+   trainer.nnodes=1 \
    trainer.save_freq=100 \
    trainer.default_local_dir=/scratch/azureml/cr/j/76b115a71659407eb80125f03f9f1cbd//cap/data-capability/wd/INPUT_asdf/checkpoints/verl_math_Qwen2p5Math7B_NegativeRAFT_logalso_BS32_run_tokenmean \
    trainer.test_freq=1 \
