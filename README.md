@@ -29,6 +29,7 @@ Remember to change the file paths in the bash file.
 ```
 The default values for args is taken from ppo_trainer.yaml.
 Here are the different arguments passed on in the bash file:
+```
 * **data.train_files**: specify the path to training dataset.
 * **data.val_files**: specify the path to the validation dataset.
 *  **algorithm.adv_estimator**: algorithm used for calculating the advanteges. Options: grpo/gae
@@ -64,7 +65,9 @@ Here are the different arguments passed on in the bash file:
 *   **trainer.nnodes**: number of nodes
 *   **trainer.save_freq**: number of iterations between successive saved checkpoints
 *   **trainer.default_local_dir**: logging path for trained checkpoints
-*   **trainer.test_freq**: number of iterations between successive evals 
-Todos
+*   **trainer.test_freq**: number of iterations between successive evals
+```
+
+### Todos
 1) Add the eval code and corresponding instructions.
 2) Add the features to run on multiple datasets like Numina and multiple models like llama8B.
